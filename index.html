@@ -7,9 +7,10 @@
   <title>dialog element</title>
   <link rel="stylesheet" href="dialog-polyfill.css">
   <style>
-    input[value="close"] {
-      display: block;
-      margin: 0 auto;
+    dialog div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
   </style>
   <script defer src="dialog-polyfill.js"></script>
@@ -18,8 +19,10 @@
 <body>
   <dialog>
     <p>this is dialog element.</p>
-    <input type="button" value="close">
-    <button type="button">noop</button>
+    <div>
+      <input type="button" value="close">
+      <button type="button">noop</button>
+    </div>
   </dialog>
   <input type="button" value="open">
 </body>

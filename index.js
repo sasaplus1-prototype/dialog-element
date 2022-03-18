@@ -2,9 +2,9 @@
 
   'use strict';
 
-  var dialog = document.querySelector('dialog'),
-      open = document.querySelector('input[value="open"]'),
-      close = document.querySelector('input[value="close"]');
+  var dialog = document.querySelector('dialog');
+  var open = document.querySelector('input[value="open"]');
+  var close = document.querySelector('input[value="close"]');
 
   dialogPolyfill.registerDialog(dialog);
 
